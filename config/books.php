@@ -45,6 +45,8 @@ return [
             'books_author'      => 'library' . $table_separator . 'book_author',
             'books_review'      => 'library' . $table_separator . 'book_review',
             'books_comment'     => 'library' . $table_separator . 'book_comment',
+            'books_owner'       => 'library' . $table_separator . 'book_owner',
+            'books_genre'       => 'library' . $table_separator . 'book_genre',
         ]
     ]
 ];

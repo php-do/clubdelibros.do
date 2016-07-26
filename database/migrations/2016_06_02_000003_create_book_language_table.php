@@ -20,6 +20,10 @@ class CreateBookLanguageTable extends Migration
 
             //Foreign Key's
             $table->foreign('book_id')->references('id')->on(config('books.tables.library.books'))->onDelete('cascade');
+            $table->foreign('language_id')->references('id')->on(config('books.tables.core.language'))->onDelete('cascade');
+
+            //Unique Key's
+            $table->unique(['book_id', 'language_id'], 'books_language_unique');
         });
     }
 

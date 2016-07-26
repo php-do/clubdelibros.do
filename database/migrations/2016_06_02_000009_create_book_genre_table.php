@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookEditionTable extends Migration
+class CreateBookGenreTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,18 +12,18 @@ class CreateBookEditionTable extends Migration
      */
     public function up()
     {
-        Schema::create(config('books.tables.library.books_edition'), function (Blueprint $table) {
+        Schema::create(config('books.tables.library.books_genre'), function (Blueprint $table) {
             $table->increments('id');
             $table->integer('book_id')->unsigned();
-            $table->integer('edition_id')->unsigned();
+            $table->integer('genre_id')->unsigned();
             $table->timestamps();
 
             //Foreign Key's
             $table->foreign('book_id')->references('id')->on(config('books.tables.library.books'))->onDelete('cascade');
-            $table->foreign('edition_id')->references('id')->on(config('books.tables.core.edition'))->onDelete('cascade');
+            $table->foreign('genre_id')->references('id')->on(config('books.tables.core.genre'))->onDelete('cascade');
 
             //Unique Key's
-            $table->unique(['book_id', 'edition_id'], 'books_edition_unique');
+            $table->unique(['book_id', 'genre_id'], 'books_genre_unique');
         });
     }
 
@@ -34,6 +34,6 @@ class CreateBookEditionTable extends Migration
      */
     public function down()
     {
-        Schema::drop(config('books.tables.library.books_edition'));
+        Schema::drop(config('books.tables.library.books_genre'));
     }
 }

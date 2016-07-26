@@ -21,6 +21,9 @@ class CreateBookAuthorTable extends Migration
             //Foreign Key's
             $table->foreign('book_id')->references('id')->on(config('books.tables.library.books'))->onDelete('cascade');
             $table->foreign('author_id')->references('id')->on(config('books.tables.core.author'))->onDelete('cascade');
+
+            //Unique Key's
+            $table->unique(['book_id', 'author_id'], 'books_author_unique');
         });
     }
 
