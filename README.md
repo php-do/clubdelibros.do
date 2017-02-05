@@ -1,11 +1,11 @@
-# Club de Libros ([clubdelibros](http://clubdelibros.do))
+# Club de Libros ([clubdelibros](http://clubdelibros.do)) [![Build Status](https://travis-ci.org/christianrd/clubdelibros.do.svg?branch=master)](https://travis-ci.org/christianrd/clubdelibros.do)
 
 
 ## Requisitos
 
  - [Composer](http://getcomposer.org).
  - [MySQL](https://www.mysql.com/).
- - [PHP](http://php.net/).
+ - [PHP](http://php.net/) >=5.5.
 
 
 
@@ -30,4 +30,5 @@
 ## Contribuyentes
 [![Joel A. Jaime](https://avatars0.githubusercontent.com/u/1984746?v=3&s=100) ](http://github.com/jblandino) | 
 [![Jose Gratereaux](https://avatars0.githubusercontent.com/u/4011136?v=3&s=100) ](https://github.com/gratereaux) | 
-[![Elminson De Oleo Baez](https://avatars3.githubusercontent.com/u/2476286?v=3&s=100) ](https://github.com/elminson)
+[![Elminson De Oleo Baez](https://avatars3.githubusercontent.com/u/2476286?v=3&s=100) ](https://github.com/elminson)| 
+[![Christian D. Rodríguez V.](https://avatars2.githubusercontent.com/u/10536381?v=3&s=100) ](https://github.com/christianrd)

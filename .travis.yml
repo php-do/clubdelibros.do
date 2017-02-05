@@ -1,0 +1,25 @@
+language: php
+
+php:
+  - 7.1
+  - 5.6
+
+env:
+  global:
+    - setup=basic
+    - APP_ENV=local
+    - APP_DEBUG=true
+    - APP_KEY=base64:GIBAOGJPkU3MtQhMGA5nc9fzJmed2DvD7ESsfYLcKUc=
+    - DB_CONNECTION=mysqli
+    - CACHE_DRIVER=file
+    - SESSION_DRIVER=file
+    - QUEUE_DRIVER=sync
+
+sudo: false
+
+install:
+- if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction --prefer-source; fi
+- if [[ $setup = 'stable' ]]; then travis_retry composer update --prefer-source --no-interaction --prefer-stable; fi
+- if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-source --no-interaction --prefer-lowest --prefer-stable; fi
+
+script: vendor/bin/phpunit
