@@ -31,4 +31,4 @@
 [![Joel A. Jaime](https://avatars0.githubusercontent.com/u/1984746?v=3&s=100) ](http://github.com/jblandino) | 
 [![Jose Gratereaux](https://avatars0.githubusercontent.com/u/4011136?v=3&s=100) ](https://github.com/gratereaux) | 
 [![Elminson De Oleo Baez](https://avatars3.githubusercontent.com/u/2476286?v=3&s=100) ](https://github.com/elminson)| 
-[![Christian D. Rodríguez V.](https://avatars2.githubusercontent.com/u/10536381?v=3&s=460) ](https://github.com/christianrd)
+[![Christian D. Rodríguez V.](https://avatars2.githubusercontent.com/u/10536381?v=3&s=100) ](https://github.com/christianrd)
