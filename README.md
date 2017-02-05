@@ -1,11 +1,11 @@
-# Club de Libros ([clubdelibros](http://clubdelibros.do))
+# Club de Libros ([clubdelibros](http://clubdelibros.do)) [![Build Status](https://travis-ci.org/christianrd/clubdelibros.do.svg?branch=master)](https://travis-ci.org/christianrd/clubdelibros.do)
 
 
 ## Requisitos
 
  - [Composer](http://getcomposer.org).
  - [MySQL](https://www.mysql.com/).
- - [PHP](http://php.net/).
+ - [PHP](http://php.net/) >=5.5.
 
 
 
