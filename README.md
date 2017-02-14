@@ -1,4 +1,4 @@
-# Club de Libros ([clubdelibros](http://clubdelibros.do)) [![Build Status](https://travis-ci.org/christianrd/clubdelibros.do.svg?branch=master)](https://travis-ci.org/christianrd/clubdelibros.do)
+# Club de Libros [![Build Status](https://travis-ci.org/php-do/clubdelibros.do.svg?branch=master)](https://travis-ci.org/php-do/clubdelibros.do)
 
 
 ## Requisitos
