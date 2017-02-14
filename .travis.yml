@@ -3,6 +3,7 @@ language: php
 php:
   - 7.1
   - 5.6
+  - 5.5
 
 env:
   global:
@@ -16,6 +17,17 @@ env:
     - QUEUE_DRIVER=sync
 
 sudo: false
+# blocklist
+#branches:
+#  except:
+#  - develop
+#  - experimental
+
+# safelist
+branches:
+  only:
+  - master
+#  - stable
 
 install:
 - if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction --prefer-source; fi
